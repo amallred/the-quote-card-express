@@ -13,16 +13,12 @@ app.use(express.static("./public"));
 
 
 // Unsure what these do; will look into it
-// WILL LOOK INTO IT
-// RIGHT?!!
 
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
-// (LOOK THIS UP ^^^)
-// (LOOK THIS UP ^^^)
-// (LOOK THIS UP ^^^)
 
 
+// Press Ctrl and click the link to open the server when we start running the program.
 app.listen(port, () => {
     console.log(`Server is running http://localhost:${port}`);
     console.log('Press Ctrl+C to end this process.');
