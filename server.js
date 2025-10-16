@@ -11,7 +11,10 @@ const port = 8080;
 require('dotenv').config();
 const cors = require('cors');
 
-app.use(cors());
+const corsOptions = {
+    origin: `http://localhost:${port}`
+};
+app.use(cors(corsOptions));
 
 // Static files are all in public folder; html, css, client-side js
 // Middleware function
